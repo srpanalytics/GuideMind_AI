@@ -121,7 +121,7 @@ tools_df = load_data()
 # Load NLP model
 @st.cache_resource
 def load_model():
-    return SentenceTransformer('all-MiniLM-L6-v2')
+    return SentenceTransformer('multi-qa-mpnet-base-dot-v1')
 
 model = load_model()
 
